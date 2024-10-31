@@ -8,53 +8,150 @@ Requirements
 Select ONE Additional Feature to Add  
 [ no ] Feature 1 - Include a :hover feature
 [ no ] Feature 2 - Include at least two Internal links
-[ no ] Feature 3 - Include a list in a tabl
+[ no ] Feature 3 - Include a list in a table
 [ no ] Feature 4 - Include at least two background images in a table
 -->
 
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Project: Recipe book</title>
+    <meta charset="utf-8" />
+    <style>
+      table,
+      th,
+      td {
+        border: 2px solid;
+      }
 
-<head>
-  <title>Project: Recipe book</title>
-  <meta charset="utf-8">
-  <style>
-  </style>
-</head>
+      img {
+        border-radius: 20px;
+        border: 5px solid;
+        border-color: rgb(218, 214, 167);
+      }
+      body {
+        background-color: rgb(183, 182, 141);
+      }
+      .titles {
+        color: rgb(211, 0, 90);
+      }
+      #blue {
+        color: rgb(7, 112, 223);
+        border-style: dotted;
+        border-color: rgb(241, 207, 199);
+      }
+      
+      
+    </style>
+  </head>
 
-<body>
+  <body>
+    <h1 style="font-family: Arial" id="blue">
+      Ari's Recipe Book <span> &#127859; </span>
+    </h1>
 
-  <h1>____'s Recipe Book</h1>
+    <h2 class="titles" style="font-family: Arial">Contents:</h2>
 
-  <h2>Contents:</h2>
+    <ol style="font-family: Arial">
+      <li><a href="#ingredients">Ingredients</a></li>
+      <li><a href="#steps">Step-by-step</a></li>
+      <li><a href="#sources">Credits</a></li>
+    </ol>
 
-  <ol>
-    <li><a href="?">Recipe #1</a></li>
-  </ol>
+    <h2 class="titles" style="font-family: Arial">Recipe #1</h2>
+    <h4 class="titles" style="font-family: Arial">
+      Super Easy <br />Microwaved Korean Steamed Egg
+    </h4>
+    <img
+      src="https://twoplaidaprons.com/wp-content/uploads/2022/05/close-up-Korean-volcano-egg-in-clay-pot-thumbnail-500x375.jpg"
+      width="210"
+    />
 
-  <h2 id="?">Recipe #1</h2>
+    <table style="font-family: Arial">
+      <thead>
+        <tr>
+          <th id="ingredients">Ingredients</th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <ul style="list-style-type: square">
+              <li>eggs</li>
+              <img
+                src="https://www.mayoclinichealthsystem.org/-/media/national-files/images/hometown-health/2021/eggs-in-a-wood-bowl.jpg?sc_lang=en"
+                width="120"
+              />
+              <li>sesame oil</li>
+              <img
+                src="https://media.post.rvohealth.io/wp-content/uploads/sites/3/2022/06/sesame_oil_what_to_know_732x549_thumb.jpg"
+                width="120"
+              />
 
-  <ul>
-    <li>Time: _</li>
-    <li>Serves: _</li>
-  </ul>
+              <li>salt</li>
+              <img
+                src="https://www.canr.msu.edu/outreach/uploads/images/salt-6728600_1280.jpg?language_id=1"
+                width="120"
+              />
+              <li>water</li>
+              <img
+                src="https://www.cuisineathome.com/review/wp-content/uploads/2024/04/liquid-measuring-cup-cuisine-channel-324-article-226944.jpg"
+                width="120"
+              />
+              <li>scallions(green onion)</li>
+              <img
+                src="https://www.transplantingtraditions.org/data/_uploaded/image/Veggies/Scallions_TD%20copy.jpeg"
+                width="120"
+              />
+            </ul>
+          </td>
+          <td>
+            <p>
+             <ul style="list-style-type: square"></ul>
+        <li>3-4 eggs</li>
+            <br>
+          <li>drizzle of sesame oil!</li>
+            <br>
+            <li>Pinch of salt</li><br>
+            <li>Amount of water explained later</li><br>
+            <li>Chop up 2 stems of scallions</li>
+            
+            </p>
+            
+          </td>
+        </tr>
+      </tbody>
+    </table>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Ingredients</th>
-        <th>Quantity</th>
-      </tr>
-    </thead>
-    <tbody>
-    </tbody>
-  </table>
+    <p style="font-family: Arial" id="steps"><strong>Step 1:</strong></p>
+<ol>
+  <li>crack the amounts of eggs you want into a bowl, if you have a korean stone bowl, use that!</li>
+  <li>Next, whisk the eggs as much as you can and add a bit less than half of the mixed eggs.</li>
+  <li>To this new mixture, add a drizzle of sesame oil and a pinch of salt</li>
+  <li>You can shoose to add sesame seeds and/or scallions into the bowl before or after putting it in the microwave. Both can serve as a garnish as well.</li>
+  <li>Make sure to mix it well.</li>
+  <li>Put it in the microwave for 1 min 30 sec.</li>
+<li>Once the time is up check to see if it's ready by poking a hole in it. 
+  if it's too spongey it may be overcooked but that's also a result from cooking it quick in the microwave.</li>
+  <li>If it's not ready, add another 15 secs and check it until it's done</li>
+  <li>Finally, you can add the final touches, scallions and sesame seeds.</li>
+  You can also serve it as a side dish or with rice!!
+</ol>
 
-  <p><strong>Step 1:</strong> Do something.
-  </p>
+    <em id="sources">Sources: </em>
 
-  <p><em>Source: <a href="?">Some recipes websites</a></em></p>
-
-</body>
-
+    <ol>
+      <li>
+        <a href="https://kirbiecravings.com/microwave-steamed-egg/"
+          >Microwave recipe</a
+        >
+      </li>
+      <li>
+        <a href="https://www.maangchi.com/recipe/ttukbaegi-gyeranjjim"
+          >Steamed Recipe</a
+        >
+      </li>
+    </ol>
+  </body>
 </html>
